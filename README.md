@@ -1,73 +1,168 @@
-# Welcome to your Lovable project
+# ERP Company System
 
-## Project info
+A comprehensive Enterprise Resource Planning (ERP) system built with modern web technologies. Developed by [We3DS](https://we3ds.com/).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+This ERP system provides integrated solutions for managing business operations including finance, inventory, human resources, sales, purchasing, and administration. It's designed to streamline workflows and improve operational efficiency.
 
-There are several ways of editing your application.
+## Quick Start
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+To get started with this project, follow these steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd ERP-Company
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start the development server with hot reload
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run lint` - Run ESLint to check code quality
+- `npm run preview` - Preview production build locally
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Next generation frontend tooling
+- **TypeScript** - Type-safe JavaScript
+- **React 18** - Modern UI library
+- **shadcn-ui** - High-quality, accessible UI components
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **React Hook Form** - Performant form state management
+- **Zod** - TypeScript-first schema validation
+- **Recharts** - Composable charting library
+- **Lucide React** - Beautiful icon library
+- **TanStack Query** - Powerful data synchronization
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```
+ERP-Company/
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── ui/           # shadcn-ui components
+│   │   └── layout/       # Layout components
+│   ├── pages/            # Page components
+│   ├── types/            # TypeScript type definitions
+│   ├── lib/              # Utility functions
+│   ├── App.tsx           # Main app component
+│   └── main.tsx          # Entry point
+├── public/               # Static assets
+├── docs/                 # Documentation
+├── index.html            # HTML template
+├── vite.config.ts        # Vite configuration
+├── tailwind.config.ts    # Tailwind CSS configuration
+└── package.json          # Project dependencies
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Features
 
-Yes, you can!
+The ERP system includes the following modules:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Finance
+- Chart of Accounts management
+- Journal Entries
+- General Ledger
+- Trial Balance
+- Audit Logs
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Inventory
+- Item management
+- Warehouse management
+- Stock movements tracking
+- Low stock alerts
+
+### Human Resources
+- Employee management
+- Department organization
+- Leave management
+- Payroll processing
+
+### Sales & Purchasing
+- Customer management
+- Sales orders
+- Invoice generation
+- Vendor management
+
+### Administration
+- User and role management
+- Company settings
+- Localization
+- Tax and currency configuration
+
+## Documentation
+
+For detailed documentation, please refer to the [docs](./docs) directory:
+
+- [CHANGELOG](./docs/CHANGELOG.md) - Version history and updates
+- [PROJECT_SETUP](./docs/PROJECT_SETUP.md) - Detailed setup instructions
+- [STRUCTURE](./docs/STRUCTURE.md) - Project architecture and organization
+- [TECHNOLOGIES](./docs/TECHNOLOGIES.md) - Technology stack details
+- [FEATURES](./docs/FEATURES.md) - Detailed feature documentation
+- [USE_CASES](./docs/USE_CASES.md) - Common use cases and workflows
+- [DEPLOYMENT](./docs/DEPLOYMENT.md) - Deployment guide
+- [STYLES](./docs/STYLES.md) - Styling guidelines
+- [CODE_OF_CONDUCT](./docs/CODE_OF_CONDUCT.md) - Community guidelines
+- [CONTRIBUTING](./docs/CONTRIBUTING.md) - Contribution guidelines
+- [SECURITY](./docs/SECURITY.md) - Security best practices
+- [ERD](./docs/ERD.md) - Entity Relationship Diagram
+
+## Development
+
+### Code Quality
+
+This project uses ESLint for code quality checks. Run the linter with:
+
+```sh
+npm run lint
+```
+
+### Building
+
+To create a production build:
+
+```sh
+npm run build
+```
+
+To preview the production build locally:
+
+```sh
+npm run preview
+```
+
+## Contributing
+
+We welcome contributions! Please read our [CONTRIBUTING](./docs/CONTRIBUTING.md) guide for details on our code of conduct and the process for submitting pull requests.
+
+## Security
+
+For security concerns, please refer to our [SECURITY](./docs/SECURITY.md) policy.
+
+## License
+
+This project is proprietary software developed by [We3DS](https://we3ds.com/). All rights reserved.
+
+## Support
+
+For support and inquiries, please visit [We3DS](https://we3ds.com/) or contact our team.
+
+## About We3DS
+
+[We3DS](https://we3ds.com/) is a leading software development company specializing in enterprise solutions and digital transformation.
